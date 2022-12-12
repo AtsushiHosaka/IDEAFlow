@@ -12,8 +12,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        setupNavigationController()
     }
-
+    
+    func setupNavigationController() {
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationController?.navigationBar.titleTextAttributes = [.font: UIFont(name: "ZenKakuGothicNew-Bold", size: 15)!]
+    }
 
 }
 

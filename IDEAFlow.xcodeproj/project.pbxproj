@@ -16,6 +16,7 @@
 		6D2CFDDB2946D8F50037140D /* IDEAFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDDA2946D8F50037140D /* IDEAFlowTests.swift */; };
 		6D2CFDE52946D8F50037140D /* IDEAFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDE42946D8F50037140D /* IDEAFlowUITests.swift */; };
 		6D2CFDE72946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDE62946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift */; };
+		6D2CFDF52946D95F0037140D /* ZenKakuGothicNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6D2CFDE02946D8F50037140D /* IDEAFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDEAFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2CFDE42946D8F50037140D /* IDEAFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEAFlowUITests.swift; sourceTree = "<group>"; };
 		6D2CFDE62946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEAFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				6D2CFDC72946D8F40037140D /* ViewController.swift */,
 				6D2CFDC92946D8F40037140D /* Main.storyboard */,
 				6D2CFDCC2946D8F50037140D /* Assets.xcassets */,
+				6D2CFDF32946D9390037140D /* Fonts */,
 				6D2CFDCE2946D8F50037140D /* LaunchScreen.storyboard */,
 				6D2CFDD12946D8F50037140D /* Info.plist */,
 			);
@@ -125,6 +128,14 @@
 				6D2CFDE62946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift */,
 			);
 			path = IDEAFlowUITests;
+			sourceTree = "<group>";
+		};
+		6D2CFDF32946D9390037140D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2CFDF52946D95F0037140D /* ZenKakuGothicNew-Bold.ttf in Resources */,
 				6D2CFDD02946D8F50037140D /* LaunchScreen.storyboard in Resources */,
 				6D2CFDCD2946D8F50037140D /* Assets.xcassets in Resources */,
 				6D2CFDCB2946D8F40037140D /* Main.storyboard in Resources */,
