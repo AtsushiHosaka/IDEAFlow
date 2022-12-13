@@ -30,9 +30,13 @@ class IdeaFlowViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        resetTimer()
-        updateComponents()
-        updateUI()
+        nextFlow()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        timer.invalidate()
     }
     
     func setupNavigationController() {
@@ -68,6 +72,7 @@ class IdeaFlowViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "OK", style: .default, handler: {_ in
             
+            UserDefaults.standard.setValue(-100, forKey: "lastPlayedDay")
             self.navigationController?.popViewController(animated: true)
         })
         let cancelAction = UIAlertAction(title: "cancel", style: .cancel)
@@ -85,8 +90,20 @@ class IdeaFlowViewController: UIViewController {
     
     @IBAction func comeUpButtonPressed(_ sender: Any) {
         
-        timer.invalidate()
         performSegue(withIdentifier: "toInputIdeaView", sender: nil)
+    }
+    
+    func nextFlow() {
+        
+        if flowManager.ideas.count < flowManager.ideasRimit {
+            
+            resetTimer()
+            updateComponents()
+            updateUI()
+        }else {
+            
+            performSegue(withIdentifier: "toFlowResultView", sender: nil)
+        }
     }
     
     @objc func updateTimer() {
@@ -106,7 +123,7 @@ class IdeaFlowViewController: UIViewController {
         
         self.title = flowManager.getCurrentTimeText()
         
-        ideasCounterLabel.text = "\(flowManager.ideas.count)/3"
+        ideasCounterLabel.text = "\(flowManager.ideas.count)/\(flowManager.ideasRimit)"
     }
     
     func updateComponents() {
@@ -119,7 +136,6 @@ class IdeaFlowViewController: UIViewController {
     
     func endFlow() {
         
-        endFlow()
         performSegue(withIdentifier: "toFlowResultView", sender: nil)
     }
 }

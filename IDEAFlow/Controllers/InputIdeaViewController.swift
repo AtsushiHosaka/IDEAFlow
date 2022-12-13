@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftDate
 
 class InputIdeaViewController: UIViewController {
     
@@ -29,8 +30,8 @@ class InputIdeaViewController: UIViewController {
     
     func setupTextViews() {
         
-        descriptionTextView.layer.borderColor = UIColor.black.cgColor
-        descriptionTextView.layer.borderWidth = 1
+        descriptionTextView.layer.borderColor = MyColor.shared.mainColor.cgColor
+        descriptionTextView.layer.borderWidth = 3
     }
     
     func setupButtons() {
@@ -61,19 +62,8 @@ class InputIdeaViewController: UIViewController {
         flowManager.ideas.append(Idea(component1: flowManager.currentComponents.component1,
                                       component2: flowManager.currentComponents.component2,
                                       description: description,
-                                      date: Date()))
+                                      date: Date() + 9.hours))
         
-        nextFlow()
-    }
-    
-    func nextFlow() {
-        
-        if flowManager.ideas.count < flowManager.ideasRimit {
-            
-            self.navigationController?.popViewController(animated: true)
-        }else {
-            
-            performSegue(withIdentifier: "toFlowResultView", sender: nil)
-        }
+        self.navigationController?.popViewController(animated: true)
     }
 }

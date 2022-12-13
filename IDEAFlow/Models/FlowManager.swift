@@ -13,10 +13,10 @@ class FlowManager {
     
     var user = ""
     
-    var ideasRimit = 1
+    var ideasRimit = 3
     var ideas = [Idea]()
     
-    let timeRimit = 180
+    let timeRimit = 60
     var currentTime: Int = 0
     
     let components_functions = ["カメラ", "画像認識", "メモ", "AR", "VR"]
@@ -26,6 +26,12 @@ class FlowManager {
     func getComponentsPair() {
         
         currentComponents = (components_functions.randomElement() ?? "", components_consepts.randomElement() ?? "")
+    }
+    
+    func reset() {
+        
+        currentTime = 0
+        ideas = [Idea]()
     }
     
     func updateTimer() {

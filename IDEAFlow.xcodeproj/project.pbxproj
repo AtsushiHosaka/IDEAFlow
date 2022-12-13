@@ -25,6 +25,8 @@
 		6D43D6492948DAFF009408E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6482948DAFF009408E2 /* FirebaseFirestore */; };
 		6D43D64B2948DAFF009408E2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */; };
 		6D43D64F2948EA2D009408E2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43D64E2948EA2D009408E2 /* AuthViewController.swift */; };
+		6D43D6522948F0B7009408E2 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6512948F0B7009408E2 /* SwiftDate */; };
+		6D43D6562948F710009408E2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6552948F710009408E2 /* IQKeyboardManagerSwift */; };
 		6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F3B2947781900F6B3FE /* MyColor.swift */; };
 		6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4129477BDE00F6B3FE /* StartViewController.swift */; };
 		6DE73F4429477C2600F6B3FE /* IdeaFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */; };
@@ -90,8 +92,10 @@
 			files = (
 				6D43D6472948DAFF009408E2 /* FirebaseDatabaseSwift in Frameworks */,
 				6D43D6452948DAFF009408E2 /* FirebaseDatabase in Frameworks */,
+				6D43D6522948F0B7009408E2 /* SwiftDate in Frameworks */,
 				6D43D6492948DAFF009408E2 /* FirebaseFirestore in Frameworks */,
 				6D43D64B2948DAFF009408E2 /* FirebaseFirestoreSwift in Frameworks */,
+				6D43D6562948F710009408E2 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +242,8 @@
 				6D43D6462948DAFF009408E2 /* FirebaseDatabaseSwift */,
 				6D43D6482948DAFF009408E2 /* FirebaseFirestore */,
 				6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */,
+				6D43D6512948F0B7009408E2 /* SwiftDate */,
+				6D43D6552948F710009408E2 /* IQKeyboardManagerSwift */,
 			);
 			productName = IDEAFlow;
 			productReference = 6D2CFDC02946D8F40037140D /* IDEAFlow.app */;
@@ -313,6 +319,8 @@
 			mainGroup = 6D2CFDB72946D8F40037140D;
 			packageReferences = (
 				6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6D43D6502948F0B7009408E2 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				6D43D6542948F710009408E2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 6D2CFDC12946D8F40037140D /* Products */;
 			projectDirPath = "";
@@ -479,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -556,8 +564,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,8 +592,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,6 +733,22 @@
 				kind = branch;
 			};
 		};
+		6D43D6502948F0B7009408E2 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		6D43D6542948F710009408E2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -747,6 +771,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		6D43D6512948F0B7009408E2 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6502948F0B7009408E2 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		6D43D6552948F710009408E2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6542948F710009408E2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

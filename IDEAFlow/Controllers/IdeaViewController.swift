@@ -28,8 +28,8 @@ class IdeaViewController: UIViewController {
     
     func setupTextView() {
         
-        descriptionTextView.layer.borderColor = UIColor.black.cgColor
-        descriptionTextView.layer.borderWidth = 1
+//        descriptionTextView.layer.borderColor = MyColor.shared.mainColor.cgColor
+//        descriptionTextView.layer.borderWidth = 3
         descriptionTextView.isUserInteractionEnabled = false
     }
     

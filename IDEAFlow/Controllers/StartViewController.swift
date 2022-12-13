@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftDate
 
 class StartViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUserDefaults()
         setupNavigationController()
         setupButtons()
     }
@@ -24,6 +26,7 @@ class StartViewController: UIViewController {
         super.viewWillAppear(animated)
         
         updateNavigationController()
+        updateMessageLabel()
         checkUser()
     }
     
@@ -46,9 +49,27 @@ class StartViewController: UIViewController {
         pastIdeasButton.layer.borderWidth = 4
     }
     
+    func setupUserDefaults() {
+        
+        UserDefaults.standard.register(defaults: ["lastPlayedDay": -100])
+    }
+    
     func updateNavigationController() {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func updateMessageLabel() {
+        
+        let lastPlayedDay = UserDefaults.standard.integer(forKey: "lastPlayedDay")
+        
+        if (Date() + 9.hours).day == lastPlayedDay {
+            
+            messageLabel.text = "今日のプレイ：完了！"
+        }else {
+            
+            messageLabel.text = "今日のプレイ：まだ"
+        }
     }
     
     func checkUser() {
@@ -63,6 +84,10 @@ class StartViewController: UIViewController {
     }
 
     @IBAction func startButtonPressed(_ sender: Any) {
+        
+        FlowManager.shared.reset()
+        
+        UserDefaults.standard.setValue((Date() + 9.hours).day, forKey: "lastPlayedDay")
         
         performSegue(withIdentifier: "toIdeaFlowView", sender: nil)
     }
