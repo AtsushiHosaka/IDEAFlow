@@ -16,6 +16,8 @@
 		6D2CFDE52946D8F50037140D /* IDEAFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDE42946D8F50037140D /* IDEAFlowUITests.swift */; };
 		6D2CFDE72946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDE62946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift */; };
 		6D2CFDF52946D95F0037140D /* ZenKakuGothicNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */; };
+		6D2CFE41294875B70037140D /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFE3F294875B70037140D /* IdeaTableViewCell.swift */; };
+		6D2CFE42294875B70037140D /* IdeaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFE40294875B70037140D /* IdeaTableViewCell.xib */; };
 		6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F3B2947781900F6B3FE /* MyColor.swift */; };
 		6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4129477BDE00F6B3FE /* StartViewController.swift */; };
 		6DE73F4429477C2600F6B3FE /* IdeaFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */; };
@@ -58,6 +60,8 @@
 		6D2CFDE42946D8F50037140D /* IDEAFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEAFlowUITests.swift; sourceTree = "<group>"; };
 		6D2CFDE62946D8F50037140D /* IDEAFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDEAFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Bold.ttf"; sourceTree = "<group>"; };
+		6D2CFE3F294875B70037140D /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
+		6D2CFE40294875B70037140D /* IdeaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaTableViewCell.xib; sourceTree = "<group>"; };
 		6DE73F3B2947781900F6B3FE /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
 		6DE73F4129477BDE00F6B3FE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaFlowViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		6D2CFE43294875CB0037140D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6D2CFE3F294875B70037140D /* IdeaTableViewCell.swift */,
+				6D2CFE40294875B70037140D /* IdeaTableViewCell.xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		6DE73F3D29477B7E00F6B3FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +189,8 @@
 		6DE73F3F29477BA000F6B3FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6DE73F4029477BAA00F6B3FE /* Components */,
 				6DE73F4129477BDE00F6B3FE /* StartViewController.swift */,
+				6D2CFE43294875CB0037140D /* components */,
 				6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */,
 				6DE73F4529477C3200F6B3FE /* FlowResultViewController.swift */,
 				6DE73F4729477C3D00F6B3FE /* PastIdeasViewController.swift */,
@@ -185,13 +198,6 @@
 				6DE73F4B29477C8700F6B3FE /* InputIdeaViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		6DE73F4029477BAA00F6B3FE /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +306,7 @@
 			files = (
 				6D2CFDF52946D95F0037140D /* ZenKakuGothicNew-Bold.ttf in Resources */,
 				6D2CFDD02946D8F50037140D /* LaunchScreen.storyboard in Resources */,
+				6D2CFE42294875B70037140D /* IdeaTableViewCell.xib in Resources */,
 				6D2CFDCD2946D8F50037140D /* Assets.xcassets in Resources */,
 				6D2CFDCB2946D8F40037140D /* Main.storyboard in Resources */,
 			);
@@ -330,6 +337,7 @@
 				6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */,
 				6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */,
 				6DE73F50294790AC00F6B3FE /* Idea.swift in Sources */,
+				6D2CFE41294875B70037140D /* IdeaTableViewCell.swift in Sources */,
 				6DE73F4629477C3200F6B3FE /* FlowResultViewController.swift in Sources */,
 				6DE73F4C29477C8700F6B3FE /* InputIdeaViewController.swift in Sources */,
 				6DE73F4E2947909A00F6B3FE /* FlowManager.swift in Sources */,

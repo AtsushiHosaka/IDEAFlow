@@ -41,7 +41,7 @@ class InputIdeaViewController: UIViewController {
     
     func updateUI() {
         
-        self.title = "\(flowManager.currentComponents.component1)×\(flowManager.currentComponents.component2)"
+        self.title = flowManager.getComponentsText()
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {

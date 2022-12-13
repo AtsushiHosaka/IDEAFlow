@@ -36,4 +36,9 @@ class FlowManager {
         let lastTime = timeRimit - currentTime
         return "\(lastTime / 60):\(String(format: "%02d", lastTime % 60))"
     }
+    
+    func getComponentsText() -> String {
+        
+        return "\(currentComponents.component1)×\(currentComponents.component2)"
+    }
 }
