@@ -20,10 +20,11 @@ class StartViewController: UIViewController {
         setupButtons()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         updateNavigationController()
+        checkUser()
     }
     
     func setupNavigationController() {
@@ -49,10 +50,25 @@ class StartViewController: UIViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    func checkUser() {
+        
+        guard let user = UserDefaults.standard.string(forKey: "user") else {
+            
+            performSegue(withIdentifier: "toAuthView", sender: nil)
+            return
+        }
+        
+        FlowManager.shared.user = user
+    }
 
     @IBAction func startButtonPressed(_ sender: Any) {
         
-        
         performSegue(withIdentifier: "toIdeaFlowView", sender: nil)
+    }
+    
+    @IBAction func pastIdeasButtonPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toPastIdeasView", sender: nil)
     }
 }

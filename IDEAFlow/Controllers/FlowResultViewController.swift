@@ -11,7 +11,7 @@ class FlowResultViewController: UIViewController {
     
     let flowManager = FlowManager.shared
 
-    @IBOutlet weak var topButton: UIBarButtonItem!
+    @IBOutlet weak var topButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,18 +24,32 @@ class FlowResultViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        uploadIdeas()
         tableView.reloadData()
     }
     
     func setupButtons() {
         
-        //font設定
+        topButton.layer.cornerCurve = .continuous
+        topButton.layer.cornerRadius = topButton.bounds.height / 2
     }
     
     func setupTablevView() {
         
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    func uploadIdeas() {
+        
+        guard let user = UserDefaults.standard.string(forKey: "user") else {
+            return
+        }
+        
+        for idea in flowManager.ideas {
+            
+            FirebaseAPI.shared.upload(user: user, idea: idea)
+        }
     }
     
     @IBAction func topButtonPressed(_ sender: Any) {
@@ -56,13 +70,18 @@ extension FlowResultViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel!.text = "\(flowManager.ideas[indexPath.row].component1)×\(flowManager.ideas[indexPath.row].component2)"
-        cell.detailTextLabel?.text = "\(flowManager.ideas[indexPath.row].date)"
+        var config = cell.defaultContentConfiguration()
+        
+        config.text = "\(flowManager.ideas[indexPath.row].component1)×\(flowManager.ideas[indexPath.row].component2)"
+        config.secondaryText = "\(flowManager.ideas[indexPath.row].date)"
+        
+        config.textProperties.font = UIFont(name: "Zen Kaku Gothic New", size: 27)!
+        config.secondaryTextProperties.font = UIFont(name: "Zen Kaku Gothic New", size: 14)!
+        
+        cell.contentConfiguration = config
         
         return cell
     }
-    
-    
 }
 
 extension FlowResultViewController: UITableViewDelegate {

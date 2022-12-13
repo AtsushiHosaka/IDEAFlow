@@ -8,22 +8,51 @@
 import UIKit
 
 class IdeaViewController: UIViewController {
+    
+    var idea: Idea?
 
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTextView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        updateTitle()
+        updateDescriptionTextView()
     }
-    */
+    
+    func setupTextView() {
+        
+        descriptionTextView.layer.borderColor = UIColor.black.cgColor
+        descriptionTextView.layer.borderWidth = 1
+        descriptionTextView.isUserInteractionEnabled = false
+    }
+    
+    func updateTitle() {
+        
+        if let idea = idea {
+            
+            self.title = "\(idea.component1)×\(idea.component2)"
+        }else {
+            
+            self.title = ""
+        }
+    }
+    
+    func updateDescriptionTextView() {
+        
+        if let idea = idea {
+            
+            descriptionTextView.text = idea.description
+        }else {
+            
+            descriptionTextView.text = ""
+        }
+    }
 
 }

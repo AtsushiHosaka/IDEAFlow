@@ -14,8 +14,3 @@ struct Idea: Codable {
     var description: String
     var date: Date
 }
-
-struct UsersIdea: Codable {
-    
-    var ideas: [Idea]
-}

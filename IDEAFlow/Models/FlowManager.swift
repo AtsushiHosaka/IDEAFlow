@@ -11,6 +11,8 @@ class FlowManager {
     
     static let shared = FlowManager()
     
+    var user = ""
+    
     var ideasRimit = 1
     var ideas = [Idea]()
     

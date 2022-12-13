@@ -18,6 +18,13 @@
 		6D2CFDF52946D95F0037140D /* ZenKakuGothicNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */; };
 		6D2CFE41294875B70037140D /* IdeaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFE3F294875B70037140D /* IdeaTableViewCell.swift */; };
 		6D2CFE42294875B70037140D /* IdeaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFE40294875B70037140D /* IdeaTableViewCell.xib */; };
+		6D43D63B2948D598009408E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D43D63A2948D598009408E2 /* GoogleService-Info.plist */; };
+		6D43D6422948D66E009408E2 /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43D6412948D66E009408E2 /* FirebaseAPI.swift */; };
+		6D43D6452948DAFF009408E2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6442948DAFF009408E2 /* FirebaseDatabase */; };
+		6D43D6472948DAFF009408E2 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6462948DAFF009408E2 /* FirebaseDatabaseSwift */; };
+		6D43D6492948DAFF009408E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D6482948DAFF009408E2 /* FirebaseFirestore */; };
+		6D43D64B2948DAFF009408E2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */; };
+		6D43D64F2948EA2D009408E2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43D64E2948EA2D009408E2 /* AuthViewController.swift */; };
 		6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F3B2947781900F6B3FE /* MyColor.swift */; };
 		6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4129477BDE00F6B3FE /* StartViewController.swift */; };
 		6DE73F4429477C2600F6B3FE /* IdeaFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */; };
@@ -62,6 +69,9 @@
 		6D2CFDF42946D95F0037140D /* ZenKakuGothicNew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Bold.ttf"; sourceTree = "<group>"; };
 		6D2CFE3F294875B70037140D /* IdeaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaTableViewCell.swift; sourceTree = "<group>"; };
 		6D2CFE40294875B70037140D /* IdeaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdeaTableViewCell.xib; sourceTree = "<group>"; };
+		6D43D63A2948D598009408E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D43D6412948D66E009408E2 /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
+		6D43D64E2948EA2D009408E2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		6DE73F3B2947781900F6B3FE /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
 		6DE73F4129477BDE00F6B3FE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		6DE73F4329477C2600F6B3FE /* IdeaFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaFlowViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D43D6472948DAFF009408E2 /* FirebaseDatabaseSwift in Frameworks */,
+				6D43D6452948DAFF009408E2 /* FirebaseDatabase in Frameworks */,
+				6D43D6492948DAFF009408E2 /* FirebaseFirestore in Frameworks */,
+				6D43D64B2948DAFF009408E2 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +144,7 @@
 				6D2CFDF32946D9390037140D /* Fonts */,
 				6D2CFDCE2946D8F50037140D /* LaunchScreen.storyboard */,
 				6D2CFDD12946D8F50037140D /* Info.plist */,
+				6D43D63A2948D598009408E2 /* GoogleService-Info.plist */,
 			);
 			path = IDEAFlow;
 			sourceTree = "<group>";
@@ -182,6 +197,7 @@
 				6DE73F3B2947781900F6B3FE /* MyColor.swift */,
 				6DE73F4D2947909A00F6B3FE /* FlowManager.swift */,
 				6DE73F4F294790AC00F6B3FE /* Idea.swift */,
+				6D43D6412948D66E009408E2 /* FirebaseAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +212,7 @@
 				6DE73F4729477C3D00F6B3FE /* PastIdeasViewController.swift */,
 				6DE73F4929477C4500F6B3FE /* IdeaViewController.swift */,
 				6DE73F4B29477C8700F6B3FE /* InputIdeaViewController.swift */,
+				6D43D64E2948EA2D009408E2 /* AuthViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +233,12 @@
 			dependencies = (
 			);
 			name = IDEAFlow;
+			packageProductDependencies = (
+				6D43D6442948DAFF009408E2 /* FirebaseDatabase */,
+				6D43D6462948DAFF009408E2 /* FirebaseDatabaseSwift */,
+				6D43D6482948DAFF009408E2 /* FirebaseFirestore */,
+				6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */,
+			);
 			productName = IDEAFlow;
 			productReference = 6D2CFDC02946D8F40037140D /* IDEAFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 6D2CFDB72946D8F40037140D;
+			packageReferences = (
+				6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 6D2CFDC12946D8F40037140D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -309,6 +335,7 @@
 				6D2CFE42294875B70037140D /* IdeaTableViewCell.xib in Resources */,
 				6D2CFDCD2946D8F50037140D /* Assets.xcassets in Resources */,
 				6D2CFDCB2946D8F40037140D /* Main.storyboard in Resources */,
+				6D43D63B2948D598009408E2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +363,14 @@
 				6DE73F4429477C2600F6B3FE /* IdeaFlowViewController.swift in Sources */,
 				6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */,
 				6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */,
+				6D43D6422948D66E009408E2 /* FirebaseAPI.swift in Sources */,
 				6DE73F50294790AC00F6B3FE /* Idea.swift in Sources */,
 				6D2CFE41294875B70037140D /* IdeaTableViewCell.swift in Sources */,
 				6DE73F4629477C3200F6B3FE /* FlowResultViewController.swift in Sources */,
 				6DE73F4C29477C8700F6B3FE /* InputIdeaViewController.swift in Sources */,
 				6DE73F4E2947909A00F6B3FE /* FlowManager.swift in Sources */,
 				6D2CFDC42946D8F40037140D /* AppDelegate.swift in Sources */,
+				6D43D64F2948EA2D009408E2 /* AuthViewController.swift in Sources */,
 				6DE73F4A29477C4500F6B3FE /* IdeaViewController.swift in Sources */,
 				6D2CFDC62946D8F40037140D /* SceneDelegate.swift in Sources */,
 				6DE73F4829477C3D00F6B3FE /* PastIdeasViewController.swift in Sources */,
@@ -686,6 +715,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D43D6442948DAFF009408E2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6D43D6462948DAFF009408E2 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		6D43D6482948DAFF009408E2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D2CFDB82946D8F40037140D /* Project object */;
 }
