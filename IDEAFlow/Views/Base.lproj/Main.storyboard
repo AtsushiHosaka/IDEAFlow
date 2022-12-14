@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの名前は？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsU-SM-Q7I">
-                                <rect key="frame" x="16" y="199" width="361" height="40.666666666666657"/>
+                                <rect key="frame" x="16" y="199" width="361" height="32.666666666666657"/>
                                 <fontDescription key="fontDescription" name="ZenKakuGothicNew-Bold" family="Zen Kaku Gothic New" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.18039215689999999" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Btf-W4-qzX">
-                                <rect key="frame" x="55.666666666666657" y="309.66666666666669" width="282" height="44.666666666666686"/>
+                                <rect key="frame" x="55.666666666666657" y="301.66666666666669" width="282" height="44.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="282" id="CZK-Ji-zmV"/>
                                     <constraint firstAttribute="height" constant="44.670000000000002" id="LuU-jw-IO9"/>
@@ -288,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
         </scene>
-        <!--これまでのアイデア-->
+        <!--いままでのアイデア-->
         <scene sceneID="lTi-Rj-qtT">
             <objects>
                 <viewController id="ngV-Fb-8s5" customClass="PastIdeasViewController" customModule="IDEAFlow" customModuleProvider="target" sceneMemberID="viewController">
@@ -320,7 +320,7 @@
                             <constraint firstItem="4VD-2H-XXt" firstAttribute="leading" secondItem="O0O-we-P0p" secondAttribute="leading" id="SfP-YW-Coe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="これまでのアイデア" id="7wn-dx-DM4">
+                    <navigationItem key="navigationItem" title="いままでのアイデア" id="7wn-dx-DM4">
                         <barButtonItem key="backBarButtonItem" title=" " id="OpB-Z7-nMg"/>
                     </navigationItem>
                     <connections>
