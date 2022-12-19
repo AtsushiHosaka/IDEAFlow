@@ -28,6 +28,8 @@ class AuthViewController: UIViewController {
         
         guard let name = nameTextField.text else { return }
         
+        if name == "" { return }
+        
         UserDefaults.standard.set(name, forKey: "user")
         
         dismiss(animated: true)
