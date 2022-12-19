@@ -80,6 +80,12 @@ class StartViewController: UIViewController {
             return
         }
         
+        if user == "" {
+            
+            performSegue(withIdentifier: "toAuthView", sender: nil)
+            return
+        }
+        
         FlowManager.shared.user = user
     }
 
