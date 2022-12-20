@@ -59,6 +59,18 @@ class InputIdeaViewController: UIViewController {
             return
         }
         
+        if description == "" {
+            
+            let alertController = UIAlertController(title: "説明を入力してください", message: "", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .default)
+            
+            alertController.addAction(okAction)
+            
+            present(alertController, animated: true)
+            return
+        }
+        
         flowManager.ideas.append(Idea(component1: flowManager.currentComponents.component1,
                                       component2: flowManager.currentComponents.component2,
                                       description: description,
