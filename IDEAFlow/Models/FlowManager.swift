@@ -20,12 +20,17 @@ class FlowManager {
     var currentTime: Int = 0
     
     let components_functions = ["カメラ", "画像認識", "メモ", "AR", "VR", "時計", "アラーム", "カレンダー", "ストップウォッチ", "地図", "天気", "位置情報", "加速度センサー", "明るさセンサー", "ライト", "通話", "電卓", "AI", "キーボード", "通知"]
-    let components_consepts = ["単語学習", "勉強", "SNS", "運動", "ゲーム", "リマインダー", "時間割", "宿題", "チャット", "ノート", "散歩", "スポーツ", "服装", "タイピング", "睡眠", "砂時計", "音楽", "プレイリスト", "食事", "買い物", "プログラミング", "部活", "おかね", "読書", "公園", "電車", "黒板", "空", "星座", "文化", "デザイン", "映え"]
+    let components_consepts: [WordData]!
     var currentComponents = (component1: "", component2: "")
+    
+    init() {
+        //扱うときもWordDataの配列にしたい、今回はStringに無理やり入れるためにmapした
+        components_consepts = CSVManager.shared.parseCSV(wordCategory: .noun)
+    }
     
     func getComponentsPair() {
         
-        currentComponents = (components_functions.randomElement() ?? "", components_consepts.randomElement() ?? "")
+        currentComponents = (components_functions.randomElement() ?? "", components_consepts.randomElement()!.word)
     }
     
     func reset() {
