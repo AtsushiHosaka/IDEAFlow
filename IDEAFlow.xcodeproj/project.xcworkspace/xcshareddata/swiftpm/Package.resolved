@@ -10,6 +10,24 @@
       }
     },
     {
+      "identity" : "app-development-features",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yukiny0811/app-development-features",
+      "state" : {
+        "revision" : "581d2fce034f967a9deffac1ab62498d070238fe",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "descriptionenum",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yukiny0811/DescriptionEnum/",
+      "state" : {
+        "revision" : "cbdd0a8670c4095913449f84197d775baa1b750e",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",
@@ -79,6 +97,7 @@
       "state" : {
         "branch" : "master",
         "revision" : "46c599a9d2889ebbf6432e4d6817051fc13fd4b1"
+        "revision" : "7842dfbde3c77831032ba63eafe3155c34b87d2e"
       }
     },
     {
@@ -115,6 +134,15 @@
       "state" : {
         "revision" : "3c54ab05249f59f2c6641dd2920b8358ea9ed127",
         "version" : "1.24.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "74203046135342e4a4a627476dd6caf8b28fe11b",
+        "version" : "509.0.0"
       }
     },
     {
