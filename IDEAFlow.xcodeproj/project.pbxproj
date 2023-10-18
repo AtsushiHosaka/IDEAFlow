@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5B042F2ADBA79F00D5E60A /* Noun.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B042E2ADBA79F00D5E60A /* Noun.csv */; };
+		3D5B04312ADBA9DE00D5E60A /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B04302ADBA9DE00D5E60A /* WordData.swift */; };
+		3D5B04332ADBAA6B00D5E60A /* CSVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B04322ADBAA6B00D5E60A /* CSVManager.swift */; };
 		56A4B3872ADC2EF80014BE96 /* AppDevelopmentFeatures in Frameworks */ = {isa = PBXBuildFile; productRef = 56A4B3862ADC2EF80014BE96 /* AppDevelopmentFeatures */; };
 		6D2CFDC42946D8F40037140D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDC32946D8F40037140D /* AppDelegate.swift */; };
 		6D2CFDC62946D8F40037140D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDC52946D8F40037140D /* SceneDelegate.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D5B042E2ADBA79F00D5E60A /* Noun.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Noun.csv; sourceTree = "<group>"; };
+		3D5B04302ADBA9DE00D5E60A /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
+		3D5B04322ADBAA6B00D5E60A /* CSVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVManager.swift; sourceTree = "<group>"; };
 		6D2CFDC02946D8F40037140D /* IDEAFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDEAFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2CFDC32946D8F40037140D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D2CFDC52946D8F40037140D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				6D2CFDCE2946D8F50037140D /* LaunchScreen.storyboard */,
 				6D2CFDD12946D8F50037140D /* Info.plist */,
 				6D43D63A2948D598009408E2 /* GoogleService-Info.plist */,
+				3D5B042E2ADBA79F00D5E60A /* Noun.csv */,
 			);
 			path = IDEAFlow;
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 				6DE73F4D2947909A00F6B3FE /* FlowManager.swift */,
 				6DE73F4F294790AC00F6B3FE /* Idea.swift */,
 				6D43D6412948D66E009408E2 /* FirebaseAPI.swift */,
+				3D5B04322ADBAA6B00D5E60A /* CSVManager.swift */,
+				3D5B04302ADBA9DE00D5E60A /* WordData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				6D2CFDCD2946D8F50037140D /* Assets.xcassets in Resources */,
 				6D2CFDCB2946D8F40037140D /* Main.storyboard in Resources */,
 				6D43D63B2948D598009408E2 /* GoogleService-Info.plist in Resources */,
+				3D5B042F2ADBA79F00D5E60A /* Noun.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,12 +384,14 @@
 			files = (
 				6DE73F4429477C2600F6B3FE /* IdeaFlowViewController.swift in Sources */,
 				6DE73F4229477BDE00F6B3FE /* StartViewController.swift in Sources */,
+				3D5B04332ADBAA6B00D5E60A /* CSVManager.swift in Sources */,
 				6DE73F3C2947781900F6B3FE /* MyColor.swift in Sources */,
 				6D43D6422948D66E009408E2 /* FirebaseAPI.swift in Sources */,
 				6DE73F50294790AC00F6B3FE /* Idea.swift in Sources */,
 				6D2CFE41294875B70037140D /* IdeaTableViewCell.swift in Sources */,
 				6DE73F4629477C3200F6B3FE /* FlowResultViewController.swift in Sources */,
 				6DE73F4C29477C8700F6B3FE /* InputIdeaViewController.swift in Sources */,
+				3D5B04312ADBA9DE00D5E60A /* WordData.swift in Sources */,
 				6DE73F4E2947909A00F6B3FE /* FlowManager.swift in Sources */,
 				6D2CFDC42946D8F40037140D /* AppDelegate.swift in Sources */,
 				6D43D64F2948EA2D009408E2 /* AuthViewController.swift in Sources */,
