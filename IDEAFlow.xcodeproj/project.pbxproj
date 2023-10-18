@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A4B3872ADC2EF80014BE96 /* AppDevelopmentFeatures in Frameworks */ = {isa = PBXBuildFile; productRef = 56A4B3862ADC2EF80014BE96 /* AppDevelopmentFeatures */; };
 		6D2CFDC42946D8F40037140D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDC32946D8F40037140D /* AppDelegate.swift */; };
 		6D2CFDC62946D8F40037140D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CFDC52946D8F40037140D /* SceneDelegate.swift */; };
 		6D2CFDCB2946D8F40037140D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2CFDC92946D8F40037140D /* Main.storyboard */; };
@@ -95,6 +96,7 @@
 				6D43D6522948F0B7009408E2 /* SwiftDate in Frameworks */,
 				6D43D6492948DAFF009408E2 /* FirebaseFirestore in Frameworks */,
 				6D43D64B2948DAFF009408E2 /* FirebaseFirestoreSwift in Frameworks */,
+				56A4B3872ADC2EF80014BE96 /* AppDevelopmentFeatures in Frameworks */,
 				6D43D6562948F710009408E2 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +246,7 @@
 				6D43D64A2948DAFF009408E2 /* FirebaseFirestoreSwift */,
 				6D43D6512948F0B7009408E2 /* SwiftDate */,
 				6D43D6552948F710009408E2 /* IQKeyboardManagerSwift */,
+				56A4B3862ADC2EF80014BE96 /* AppDevelopmentFeatures */,
 			);
 			productName = IDEAFlow;
 			productReference = 6D2CFDC02946D8F40037140D /* IDEAFlow.app */;
@@ -321,6 +324,7 @@
 				6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				6D43D6502948F0B7009408E2 /* XCRemoteSwiftPackageReference "SwiftDate" */,
 				6D43D6542948F710009408E2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				56A4B3852ADC2EF80014BE96 /* XCRemoteSwiftPackageReference "app-development-features" */,
 			);
 			productRefGroup = 6D2CFDC12946D8F40037140D /* Products */;
 			projectDirPath = "";
@@ -725,6 +729,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		56A4B3852ADC2EF80014BE96 /* XCRemoteSwiftPackageReference "app-development-features" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yukiny0811/app-development-features";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
 		6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -752,6 +764,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		56A4B3862ADC2EF80014BE96 /* AppDevelopmentFeatures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56A4B3852ADC2EF80014BE96 /* XCRemoteSwiftPackageReference "app-development-features" */;
+			productName = AppDevelopmentFeatures;
+		};
 		6D43D6442948DAFF009408E2 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6D43D6432948DAFF009408E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
